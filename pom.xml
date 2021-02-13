@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>nl.ryanaelen.opensource</groupId>
-    <artifactId>Timmer</artifactId>
+    <artifactId>Timer</artifactId>
     <version>0.1-SNAPSHOT</version>
 
-    <name>Timmer</name>
-    <url>https://github.com/RyanAelen/Timmer</url>
+    <name>Timer</name>
+    <url>https://github.com/RyanAelen/Timer</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
