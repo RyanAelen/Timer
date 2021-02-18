@@ -4,10 +4,10 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
-public class Timmer {
+public class Timer {
     LocalTime gotoTime;
 
-    public Timmer(LocalTime gotoTime) {
+    public Timer(LocalTime gotoTime) {
         this.gotoTime = gotoTime;
     }
 

@@ -6,11 +6,11 @@ import java.time.LocalTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TimmerTest {
+class TimerTest {
 
     @Test
     void getTimeFormat() {
-        Timmer sut = new Timmer(LocalTime.of(10, 0));
+        Timer sut = new Timer(LocalTime.of(10, 0));
         assertEquals("10:00:00", sut.getTimeFormat(LocalTime.of(10, 0)));
         assertEquals("11:00:00", sut.getTimeFormat(LocalTime.of(11, 0)));
         assertEquals("11:01:01", sut.getTimeFormat(LocalTime.of(11, 1, 1)));
@@ -22,7 +22,7 @@ class TimmerTest {
 
     @Test
     void getTimeLeftString() {
-        Timmer sut = new Timmer(LocalTime.of(20, 0));
+        Timer sut = new Timer(LocalTime.of(20, 0));
         assertEquals("10:00:00", sut.getTimeLeftString(LocalTime.of(10, 0)));
     }
 

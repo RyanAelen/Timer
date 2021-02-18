@@ -2,7 +2,7 @@ package nl.ryanaelen.opensource;
 
 import nl.ryanaelen.opensource.textdraw.CenterText;
 import nl.ryanaelen.opensource.textdraw.ITextToScreen;
-import nl.ryanaelen.opensource.time.Timmer;
+import nl.ryanaelen.opensource.time.Timer;
 import processing.core.PApplet;
 
 import java.time.LocalTime;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class App extends PApplet {
     ITextToScreen center;
-    Timmer timer;
+    Timer timer;
     Boolean tijdbekent = false;
 
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class App extends PApplet {
     public void setup() {
         surface.setResizable(true);
         center = new CenterText(this);
-        timer = new Timmer(LocalTime.of(21, 10));
+        timer = new Timer(LocalTime.of(21, 10));
     }
 
     @Override
@@ -41,7 +41,7 @@ public class App extends PApplet {
             int hh = Integer.parseInt(scan.nextLine());
             System.out.println("Enter minuts: ");
             int mm = Integer.parseInt(scan.nextLine());
-            timer = new Timmer(LocalTime.of(hh, mm));
+            timer = new Timer(LocalTime.of(hh, mm));
             tijdbekent = true;
         }
     }
